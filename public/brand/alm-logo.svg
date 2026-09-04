@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
+  <title id="title">ALM Representações</title>
+  <desc id="desc">Monograma feminino com silhueta e lótus, assinatura Beauty e Makeup.</desc>
+  <defs>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b46f75"/>
+      <stop offset="0.45" stop-color="#d7a29c"/>
+      <stop offset="1" stop-color="#8e545b"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#rose)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M225 132c35-52 77-72 126-72 36 0 69 12 92 35"/>
+    <path d="M341 68c-14 44-5 79 24 106"/>
+    <path d="M365 174c-12 10-22 25-27 45"/>
+    <path d="M376 66c41 8 70 34 82 73-23 11-43 31-53 58"/>
+    <path d="M252 164c-34-23-70-29-106-18 18 36 43 61 76 76 16-21 27-40 30-58z"/>
+    <path d="M470 163c35-23 72-26 108-12-20 35-47 58-82 70-14-23-22-42-26-58z"/>
+    <path d="M243 167c-3 31 3 60 19 87"/>
+    <path d="M469 165c2 28-4 56-18 83"/>
+    <path d="M305 66c25-18 52-27 81-27"/>
+    <path d="M386 38c16 6 28 16 36 31"/>
+  </g>
+  <g fill="url(#rose)">
+    <path d="M360 36c15-34 32-34 47 0-14 22-30 31-47 0z"/>
+    <path d="M328 59c-28-23-48-14-61 17 27 5 47 0 61-17z"/>
+    <path d="M420 59c28-23 49-14 62 17-28 5-48 0-62-17z"/>
+  </g>
+  <text x="380" y="300" text-anchor="middle" fill="#2f2927" font-family="Georgia, 'Times New Roman', serif" font-size="126" letter-spacing="8">ALM</text>
+  <text x="380" y="345" text-anchor="middle" fill="#403735" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="11">REPRESENTAÇÕES</text>
+  <line x1="215" y1="374" x2="300" y2="374" stroke="#b46f75" stroke-width="2"/>
+  <line x1="460" y1="374" x2="545" y2="374" stroke="#b46f75" stroke-width="2"/>
+  <text x="380" y="382" text-anchor="middle" fill="#a56a70" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="7">BEAUTY • MAKEUP</text>
+  <text x="380" y="412" text-anchor="middle" fill="#8f6464" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-style="italic" letter-spacing="1">Beleza que conecta negócios</text>
+</svg>
