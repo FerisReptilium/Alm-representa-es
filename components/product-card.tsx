@@ -5,6 +5,8 @@ type Product = {
   oldPrice: string;
   badge: string;
   imageTone: string;
+  mockType: "dropper" | "cleanser" | "tube" | "jar";
+  mockAccent: string;
 };
 
 export function ProductCard({ product }: { product: Product }) {
@@ -13,7 +15,15 @@ export function ProductCard({ product }: { product: Product }) {
       <div className={`productMedia ${product.imageTone}`}>
         <span className="productBadge">{product.badge}</span>
         <button className="wishlist" aria-label={`Favoritar ${product.name}`}>♡</button>
-        <div className="mockProduct" aria-hidden="true"><span className="mockCap"></span><span className="mockLabel">ALM<br/>BEAUTY</span></div>
+        <div className={`productMock productMock--${product.mockType}`} aria-hidden="true">
+          <span className="productMockTop" />
+          <span className="productMockBody">
+            <span className="productMockBrand">{product.brand}</span>
+            <span className="productMockName">{product.name}</span>
+            <span className="productMockAccent" style={{ background: product.mockAccent }} />
+          </span>
+          <span className="productMockBase" style={{ background: product.mockAccent }} />
+        </div>
       </div>
       <div className="productInfo">
         <p className="productBrand">{product.brand}</p>
