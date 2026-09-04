@@ -1,5 +1,6 @@
 import { SiteHeader } from "@/components/site-header";
 import { Hero } from "@/components/hero";
+import { PromoMosaic } from "@/components/promo-mosaic";
 import { ProductCard } from "@/components/product-card";
 import { AiAssistant } from "@/components/ai-assistant";
 import { brands, categories, needs, products } from "@/data/home";
@@ -17,6 +18,8 @@ export default function Home() {
           <div><span>03</span><p><b>Atendimento humano</b><small>Finalize também pelo WhatsApp.</small></p></div>
           <div><span>04</span><p><b>Beauty AI</b><small>Descubra o produto ideal.</small></p></div>
         </section>
+
+        <PromoMosaic />
 
         <section className="sectionBlock" id="catalogo">
           <div className="sectionHeading splitHeading">
