@@ -10,11 +10,11 @@ export function AiAssistant() {
       {open && (
         <div className="aiPanel" role="dialog" aria-label="Beauty Assistant">
           <div className="aiPanelHead">
-            <div><span className="aiSpark">✦</span><strong>Beauty Assistant</strong><small>Consultora virtual</small></div>
+            <div><span className="aiSpark">✦</span><strong>Beauty Assistant</strong><small>Consultora virtual ALM</small></div>
             <button onClick={() => setOpen(false)} aria-label="Fechar assistente">×</button>
           </div>
-          <div className="aiMessage">Olá! Posso ajudar você a encontrar produtos por necessidade, ingrediente ou faixa de preço.</div>
-          <div className="aiSuggestions"><button>Pele oleosa</button><button>Hidratação</button><button>Até R$ 100</button></div>
+          <div className="aiMessage">Olá! Posso ajudar você a conhecer os produtos Febella por categoria, efeito desejado ou faixa de preço.</div>
+          <div className="aiSuggestions"><button>Quero efeito glow</button><button>Produtos para lábios</button><button>Mais vendidos</button></div>
           <div className="aiInput"><span>Escreva sua pergunta...</span><button aria-label="Enviar">↑</button></div>
           <small className="aiDisclaimer">Protótipo visual. A IA será conectada ao catálogo real por backend seguro.</small>
         </div>
