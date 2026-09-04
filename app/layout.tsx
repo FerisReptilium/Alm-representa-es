@@ -3,8 +3,8 @@ import "./globals.css";
 import "./product-polish.css";
 
 export const metadata: Metadata = {
-  title: "ALM Representações | K-Beauty & Cosméticos",
-  description: "E-commerce ALM Representações com curadoria K-Beauty, cosméticos e experiência premium.",
+  title: "ALM Representações | Febella Makeup",
+  description: "ALM Representações: catálogo, atendimento e experiência digital para produtos Febella Makeup.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
