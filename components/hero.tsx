@@ -5,9 +5,9 @@ export function Hero() {
         <div className="heroBrandLockup">
           <img src="/brand/alm-logo.svg" alt="ALM Representações" className="heroAlmLogo" />
         </div>
-        <p className="eyebrow">MARCA REPRESENTADA · FEBELLA MAKEUP</p>
-        <h1 id="hero-title">Beleza que conecta pessoas, marcas e negócios.</h1>
-        <p className="heroText">Uma experiência digital da ALM Representações para descobrir a Febella Makeup, acompanhar campanhas, montar pedidos e falar direto com o atendimento.</p>
+        <p className="eyebrow">ALM REPRESENTAÇÕES · BEAUTY & MAKEUP</p>
+        <h1 id="hero-title">Beleza que conecta negócios.</h1>
+        <p className="heroText">Descubra os destaques da Febella Makeup com a curadoria e o atendimento comercial da ALM Representações.</p>
         <div className="heroActions">
           <a className="button buttonDark" href="#febella">Conhecer Febella</a>
           <a className="button buttonGhost" href="#catalogo">Explorar produtos</a>
@@ -18,7 +18,7 @@ export function Hero() {
         </div>
       </div>
       <div className="heroVisual heroVisualFinal" aria-label="Campanha visual da ALM Representações">
-        <img src="/images/radiant-renewal.webp" alt="Modelo da campanha de beleza da ALM Representações" className="heroImage" />
+        <img src="/images/alm-modelo-radiant-renewal.webp" alt="Modelo da campanha de beleza da ALM Representações" className="heroImage" />
         <div className="heroFebellaCard">
           <img src="/brand/febella-wordmark.svg" alt="Febella Makeup" />
           <span>Representada pela ALM</span>

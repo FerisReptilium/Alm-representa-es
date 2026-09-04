@@ -10,10 +10,42 @@ export const categories = [
 export const needs = ["Pele preparada", "Efeito glow", "Longa duração", "Olhar marcado", "Lábios em destaque", "Praticidade"];
 
 export const products = [
-  { name: "Blush Magic PH", brand: "FEBELLA MAKEUP", price: "Consulte", oldPrice: "", badge: "DESTAQUE", imageTone: "blush", mockType: "jar" as const, mockAccent: "#dd7f92" },
-  { name: "Jelly Tint Multifuncional", brand: "FEBELLA MAKEUP", price: "Consulte", oldPrice: "", badge: "MULTIUSO", imageTone: "pearl", mockType: "tube" as const, mockAccent: "#b33f59" },
-  { name: "Blindagem 3 em 1", brand: "FEBELLA MAKEUP", price: "Consulte", oldPrice: "", badge: "3 EM 1", imageTone: "blue", mockType: "dropper" as const, mockAccent: "#c49a67" },
-  { name: "Lip Gloss Honey", brand: "FEBELLA MAKEUP", price: "Consulte", oldPrice: "", badge: "LÁBIOS", imageTone: "sage", mockType: "cleanser" as const, mockAccent: "#d39a50" },
+  {
+    name: "Jelly Tint Multifuncional",
+    brand: "FEBELLA MAKEUP",
+    price: "Consulte",
+    badge: "MULTIUSO",
+    image: "/images/febella-jelly-tint.webp",
+    alt: "Jelly Tint Febella Makeup em quatro tonalidades",
+    imagePosition: "50% 58%",
+  },
+  {
+    name: "Magic Blush · Cristal Blush",
+    brand: "FEBELLA MAKEUP",
+    price: "Consulte",
+    badge: "DESTAQUE",
+    image: "/images/febella-magic-blush.webp",
+    alt: "Magic Blush e Cristal Blush da Febella Makeup",
+    imagePosition: "58% 61%",
+  },
+  {
+    name: "Blindagem 3 em 1",
+    brand: "FEBELLA MAKEUP",
+    price: "Consulte",
+    badge: "3 EM 1",
+    image: "/images/febella-blindagem-3-em-1.webp",
+    alt: "Blindagem 3 em 1 Febella Makeup",
+    imagePosition: "50% 62%",
+  },
+  {
+    name: "Coleção de Lábios · Linha Mel",
+    brand: "FEBELLA MAKEUP",
+    price: "Consulte",
+    badge: "LINHA MEL",
+    image: "/images/febella-linha-mel.webp",
+    alt: "Coleção de itens labiais da linha Mel Febella Makeup",
+    imagePosition: "50% 66%",
+  },
 ];
 
 export const brands = ["FEBELLA MAKEUP"];

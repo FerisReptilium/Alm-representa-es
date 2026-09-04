@@ -2,33 +2,30 @@ type Product = {
   name: string;
   brand: string;
   price: string;
-  oldPrice: string;
   badge: string;
-  imageTone: string;
-  mockType: "dropper" | "cleanser" | "tube" | "jar";
-  mockAccent: string;
+  image: string;
+  alt: string;
+  imagePosition: string;
 };
 
 export function ProductCard({ product }: { product: Product }) {
   return (
     <article className="productCard">
-      <div className={`productMedia ${product.imageTone}`}>
+      <div className="productMedia productMediaReal">
+        <img
+          className="productImage"
+          src={product.image}
+          alt={product.alt}
+          loading="lazy"
+          style={{ objectPosition: product.imagePosition }}
+        />
         <span className="productBadge">{product.badge}</span>
         <button className="wishlist" aria-label={`Favoritar ${product.name}`}>♡</button>
-        <div className={`productMock productMock--${product.mockType}`} aria-hidden="true">
-          <span className="productMockTop" />
-          <span className="productMockBody">
-            <span className="productMockBrand">{product.brand}</span>
-            <span className="productMockName">{product.name}</span>
-            <span className="productMockAccent" style={{ background: product.mockAccent }} />
-          </span>
-          <span className="productMockBase" style={{ background: product.mockAccent }} />
-        </div>
       </div>
       <div className="productInfo">
         <p className="productBrand">{product.brand}</p>
         <h3>{product.name}</h3>
-        <div className="priceRow"><strong>{product.price}</strong>{product.oldPrice && <del>{product.oldPrice}</del>}</div>
+        <div className="priceRow"><strong>{product.price}</strong></div>
         <button className="quickBuy">Comprar pelo WhatsApp <span>↗</span></button>
       </div>
     </article>

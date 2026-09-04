@@ -43,26 +43,17 @@ export default function Home() {
             <p>Uma vitrine pensada para transformar catálogo em desejo: produtos acessíveis, visuais marcantes e campanhas com forte apelo para redes sociais e ponto de venda.</p>
           </div>
           <div className="featureCards">
-            <article className="featureCard">
-              <span className="featureOrb" aria-hidden="true" />
-              <span className="featureProduct" aria-hidden="true">JELLY<br/>TINT</span>
-              <h3>Jelly Tint</h3>
-              <p>Multifuncional, jovem e visual. Um dos produtos ideais para abrir a comunicação da Febella.</p>
-              <a href="#catalogo">Ver no catálogo →</a>
+            <article className="featureCard featureCardReal">
+              <img src="/images/febella-jelly-tint.webp" alt="Campanha Jelly Tint Febella Makeup" loading="lazy" />
+              <div className="featureCardCopy"><h3>Jelly Tint</h3><p>Cor vibrante com efeito natural para combinar com cada estilo.</p><a href="#destaques">Ver no catálogo →</a></div>
             </article>
-            <article className="featureCard">
-              <span className="featureOrb" aria-hidden="true" />
-              <span className="featureProduct" aria-hidden="true">MAGIC<br/>BLUSH</span>
-              <h3>Magic Blush</h3>
-              <p>Acabamento delicado, identidade rosa e forte presença de vitrine.</p>
-              <a href="#catalogo">Descobrir →</a>
+            <article className="featureCard featureCardReal">
+              <img src="/images/febella-magic-blush.webp" alt="Campanha Magic Blush Febella Makeup" loading="lazy" />
+              <div className="featureCardCopy"><h3>Magic Blush</h3><p>Brilho delicado e acabamento natural.</p><a href="#destaques">Descobrir →</a></div>
             </article>
-            <article className="featureCard">
-              <span className="featureOrb" aria-hidden="true" />
-              <span className="featureProduct" aria-hidden="true">3 EM 1</span>
-              <h3>Blindagem 3 em 1</h3>
-              <p>Primer, diluidor e fixador: argumento simples, comercial e fácil de explicar.</p>
-              <a href="#catalogo">Conhecer →</a>
+            <article className="featureCard featureCardReal">
+              <img src="/images/febella-blindagem-3-em-1.webp" alt="Campanha Blindagem 3 em 1 Febella Makeup" loading="lazy" />
+              <div className="featureCardCopy"><h3>Blindagem 3 em 1</h3><p>Diluidor, fixador e primer em um só produto.</p><a href="#destaques">Conhecer →</a></div>
             </article>
           </div>
         </section>
@@ -103,17 +94,13 @@ export default function Home() {
         </section>
 
         <section className="editorialSection" aria-label="Campanhas editoriais">
-          <article className="editorialPanel editorialPink">
-            <p className="eyebrow">JELLY TINT</p>
-            <h2>Cor que combina com o seu estilo.</h2>
-            <p>Uma campanha vibrante para trabalhar multifuncionalidade, cor construível e conteúdo social.</p>
-            <a href="#catalogo">Explorar Jelly Tint →</a>
+          <article className="editorialPanel editorialPink editorialWithImage">
+            <img src="/images/febella-jelly-tint.webp" alt="Jelly Tint Febella Makeup" loading="lazy" />
+            <div className="editorialCopy"><p className="eyebrow">JELLY TINT</p><h2>Mais cor para o seu dia.</h2><a href="#destaques">Explorar Jelly Tint →</a></div>
           </article>
-          <article className="editorialPanel editorialGold">
-            <p className="eyebrow">LINHA MEL</p>
-            <h2>Brilho dourado para os lábios.</h2>
-            <p>Uma linguagem mais quente e sensorial para glosses, lip oils e ações sazonais.</p>
-            <a href="#catalogo">Ver linha de lábios →</a>
+          <article className="editorialPanel editorialGold editorialWithImage">
+            <img src="/images/febella-linha-mel.webp" alt="Linha Mel Febella Makeup" loading="lazy" />
+            <div className="editorialCopy"><p className="eyebrow">LINHA MEL</p><h2>Beleza que nutre você.</h2><a href="#destaques">Ver linha de lábios →</a></div>
           </article>
         </section>
 
@@ -144,7 +131,12 @@ export default function Home() {
 
         <section className="socialSection">
           <div className="featureIntro"><div><p className="eyebrow">CONTEÚDO & SOCIAL</p><h2>Da vitrine para o Instagram.</h2></div><p>O visual da Home conversa com as campanhas da Febella: rosa, brilho, textura, produtos em destaque e chamadas rápidas para compartilhamento.</p></div>
-          <div className="socialRail" aria-label="Espaços para conteúdo social"><div className="socialTile">Jelly</div><div className="socialTile">Glow</div><div className="socialTile">Mel</div><div className="socialTile">3 em 1</div></div>
+          <div className="socialRail" aria-label="Campanhas Febella Makeup">
+            <img src="/images/febella-jelly-tint.webp" alt="Campanha Jelly Tint" loading="lazy" />
+            <img src="/images/febella-magic-blush.webp" alt="Campanha Magic Blush" loading="lazy" />
+            <img src="/images/febella-linha-mel.webp" alt="Campanha Linha Mel" loading="lazy" />
+            <img src="/images/febella-blindagem-3-em-1.webp" alt="Campanha Blindagem 3 em 1" loading="lazy" />
+          </div>
         </section>
 
         <section className="newsletter" id="newsletter">

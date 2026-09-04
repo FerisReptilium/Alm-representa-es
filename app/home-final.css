@@ -28,3 +28,23 @@
 .socialSection{padding:60px;border-radius:28px;background:linear-gradient(135deg,#f8f3ef,#f0e2e4)}.socialRail{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}.socialTile{aspect-ratio:1;background:linear-gradient(145deg,#f3d7da,#f8ebe9);display:grid;place-items:center;font:30px Georgia,serif;color:#b27378;border:1px solid rgba(40,39,37,.05)}
 @media(max-width:1000px){.finalStatement,.b2bSection{grid-template-columns:1fr;gap:36px;padding:48px}.featureCards{grid-template-columns:1fr 1fr}.featureCard:first-child{grid-column:1/-1}.editorialSection,.serviceGrid{grid-template-columns:1fr}.socialRail{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.heroBrandLockup{margin-bottom:20px}.heroMonogram{font-size:34px}.heroRibbon{display:none}.finalStatement,.b2bSection,.socialSection{padding:30px;border-radius:22px}.finalStatementMark{min-height:220px}.finalStatementMonogram{font-size:66px}.featureIntro{display:block}.featureIntro p{margin-top:14px}.featureCards{grid-template-columns:1fr}.featureCard:first-child{grid-column:auto}.featureCard{min-height:360px;padding:24px}.editorialPanel{min-height:360px;padding:30px}.socialRail{grid-template-columns:1fr 1fr}}
+
+/* Real Febella campaign art */
+.featureCards{grid-template-columns:repeat(3,1fr);align-items:start}
+.featureCardReal{padding:0;display:flex;min-height:0;aspect-ratio:auto;background:#fff}
+.featureCardReal>img{position:static;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;transition:transform .45s ease}
+.featureCardReal:hover>img{transform:scale(1.025)}
+.featureCardReal::after{display:none}
+.featureCardCopy{position:static;z-index:2;padding:24px;color:var(--ink);background:#fff}
+.featureCardCopy h3{color:var(--ink);text-shadow:none}
+.featureCardCopy p{color:var(--muted);font-size:14px}
+.featureCardCopy a{color:var(--ink)}
+.editorialWithImage{padding:0;min-height:0;background:#fff}
+.editorialWithImage::after{display:none}
+.editorialWithImage>img{position:static;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.editorialWithImage .editorialCopy{position:static;z-index:3;padding:30px;color:var(--ink);background:#fff}
+.editorialWithImage .eyebrow{color:#8c7354}
+.editorialWithImage h2{max-width:430px;text-shadow:none}
+.socialRail img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid rgba(40,39,37,.05);box-shadow:0 18px 40px rgba(81,45,51,.08)}
+@media(max-width:1000px){.featureCardReal:first-child{grid-column:auto;aspect-ratio:auto}.editorialWithImage{min-height:0}}
+@media(max-width:680px){.featureCardReal,.featureCardReal:first-child{min-height:0;padding:0;aspect-ratio:auto}.featureCardCopy{padding:22px}.editorialWithImage{min-height:0;padding:0}.editorialWithImage .editorialCopy{padding:24px}}
