@@ -2,28 +2,28 @@ export function Hero() {
   return (
     <section className="heroShell heroFinal" aria-labelledby="hero-title">
       <div className="heroCopy">
-        <div className="heroBrandLockup" aria-label="ALM Representações">
-          <span className="heroMonogram">ALM</span>
-          <span className="heroBrandLine">REPRESENTAÇÕES</span>
-          <span className="heroTagline">Beleza que conecta negócios</span>
+        <div className="heroBrandLockup">
+          <img src="/brand/alm-logo.svg" alt="ALM Representações" className="heroAlmLogo" />
         </div>
-        <p className="eyebrow">ALM REPRESENTAÇÕES · FEBELLA MAKEUP</p>
-        <h1 id="hero-title">Beleza que vende. Marca que conecta.</h1>
-        <p className="heroText">A ALM conecta a Febella Makeup a clientes, revendedores e oportunidades, com uma experiência digital pensada para descoberta, atendimento e conversão.</p>
+        <p className="eyebrow">MARCA REPRESENTADA · FEBELLA MAKEUP</p>
+        <h1 id="hero-title">Beleza que conecta pessoas, marcas e negócios.</h1>
+        <p className="heroText">Uma experiência digital da ALM Representações para descobrir a Febella Makeup, acompanhar campanhas, montar pedidos e falar direto com o atendimento.</p>
         <div className="heroActions">
-          <a className="button buttonDark" href="#catalogo">Explorar produtos</a>
-          <a className="button buttonGhost" href="#atacado">Falar com a ALM</a>
+          <a className="button buttonDark" href="#febella">Conhecer Febella</a>
+          <a className="button buttonGhost" href="#catalogo">Explorar produtos</a>
         </div>
         <div className="heroTrust">
-          <span><b>Febella Makeup</b> marca em destaque</span>
-          <span><b>Atendimento direto</b> pelo WhatsApp</span>
-          <span><b>Beauty AI</b> para orientar escolhas</span>
+          <span><b>Curadoria comercial</b> produtos, linhas e campanhas organizados</span>
+          <span><b>Beauty AI</b> orientação rápida dentro do catálogo</span>
         </div>
       </div>
-      <div className="heroVisual" aria-label="Campanha visual de beleza da ALM Representações">
+      <div className="heroVisual heroVisualFinal" aria-label="Campanha visual da ALM Representações">
         <img src="/images/radiant-renewal.webp" alt="Modelo da campanha de beleza da ALM Representações" className="heroImage" />
-        <div className="heroRibbon">ALM · BEAUTY · MAKEUP</div>
-        <div className="heroVisualBadge"><span>MARCA REPRESENTADA</span><strong>Febella Makeup</strong></div>
+        <div className="heroFebellaCard">
+          <img src="/brand/febella-wordmark.svg" alt="Febella Makeup" />
+          <span>Representada pela ALM</span>
+        </div>
+        <span className="heroRibbon">BEAUTY · MAKEUP · REPRESENTAÇÕES</span>
       </div>
     </section>
   );
