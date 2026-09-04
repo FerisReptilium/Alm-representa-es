@@ -27,8 +27,14 @@ export default function Home() {
             <a className="button buttonDark" href="#febella">Conhecer a marca representada</a>
           </div>
           <div className="finalStatementMark" aria-label="Assinatura visual ALM">
-            <div className="finalStatementMonogram">ALM<small>REPRESENTAÇÕES</small></div>
+            <img src="/brand/alm-logo.svg" alt="ALM Representações — Beleza que conecta negócios" className="finalStatementLogo" />
           </div>
+        </section>
+
+        <section className="brandPartnerLockup" aria-label="Parceria ALM e Febella Makeup">
+          <img src="/brand/alm-logo.svg" alt="ALM Representações" />
+          <span className="brandPartnerDivider" aria-hidden="true" />
+          <div className="febellaWordmarkCard"><img src="/brand/febella-wordmark.svg" alt="Febella Makeup"/><small>Marca representada pela ALM</small></div>
         </section>
 
         <section className="sectionBlock" id="febella">
@@ -115,7 +121,7 @@ export default function Home() {
           <div>
             <p className="eyebrow">ALM PARA REVENDEDORES</p>
             <h2>Beleza que conecta negócios.</h2>
-            <p>A Home também precisa vender a ALM como parceira comercial. O fluxo será preparado para lojistas, revendedores e futuras condições de atacado sem misturar preço público com tabela comercial.</p>
+            <p>A Home também vende a ALM como parceira comercial. O fluxo será preparado para lojistas, revendedores e futuras condições de atacado sem misturar preço público com tabela comercial.</p>
             <div className="heroActions">
               <a className="button buttonGhost" href="#">Falar no WhatsApp</a>
               <a className="button buttonGhost" href="#newsletter">Receber novidades</a>
@@ -130,53 +136,26 @@ export default function Home() {
         </section>
 
         <section className="serviceGrid" aria-label="Serviços digitais">
-          <article className="servicePanel">
-            <span className="serviceNo">01</span>
-            <strong>Frete por CEP</strong>
-            <p>Entrega local estimada para parceiros próximos e estrutura preparada para Correios, FedEx e futuros conectores de entrega.</p>
-            <a href="#">Calcular entrega →</a>
-          </article>
-          <article className="servicePanel">
-            <span className="serviceNo">02</span>
-            <strong>Beauty AI</strong>
-            <p>A assistente vai consultar catálogo, benefícios, preços oficiais e campanhas sem expor nenhuma chave privada no navegador.</p>
-            <a href="#rotina">Perguntar à assistente →</a>
-          </article>
-          <article className="servicePanel">
-            <span className="serviceNo">03</span>
-            <strong>WhatsApp inteligente</strong>
-            <p>Cada produto poderá abrir uma mensagem pronta com nome, quantidade, campanha e origem do clique.</p>
-            <a href="#destaques">Escolher produto →</a>
-          </article>
-          <article className="servicePanel">
-            <span className="serviceNo">04</span>
-            <strong>Painel ALM</strong>
-            <p>Produtos, preços, banners, campanhas e contatos serão administráveis sem precisar editar o código.</p>
-            <a href="#">Conhecer estrutura →</a>
-          </article>
+          <article className="servicePanel"><span className="serviceNo">01</span><strong>Frete por CEP</strong><p>Entrega local estimada para parceiros próximos e estrutura preparada para Correios, FedEx e futuros conectores de entrega.</p><a href="#">Calcular entrega →</a></article>
+          <article className="servicePanel"><span className="serviceNo">02</span><strong>Beauty AI</strong><p>A assistente vai consultar catálogo, benefícios, preços oficiais e campanhas sem expor nenhuma chave privada no navegador.</p><a href="#rotina">Perguntar à assistente →</a></article>
+          <article className="servicePanel"><span className="serviceNo">03</span><strong>WhatsApp inteligente</strong><p>Cada produto poderá abrir uma mensagem pronta com nome, quantidade, campanha e origem do clique.</p><a href="#destaques">Escolher produto →</a></article>
+          <article className="servicePanel"><span className="serviceNo">04</span><strong>Painel ALM</strong><p>Produtos, preços, banners, campanhas e contatos serão administráveis sem precisar editar o código.</p><a href="#">Conhecer estrutura →</a></article>
         </section>
 
         <section className="socialSection">
-          <div className="featureIntro">
-            <div><p className="eyebrow">CONTEÚDO & SOCIAL</p><h2>Da vitrine para o Instagram.</h2></div>
-            <p>O visual da Home conversa com as campanhas da Febella: rosa, brilho, textura, produtos em destaque e chamadas rápidas para compartilhamento.</p>
-          </div>
-          <div className="socialRail" aria-label="Espaços para conteúdo social">
-            <div className="socialTile">Jelly</div><div className="socialTile">Glow</div><div className="socialTile">Mel</div><div className="socialTile">3 em 1</div>
-          </div>
+          <div className="featureIntro"><div><p className="eyebrow">CONTEÚDO & SOCIAL</p><h2>Da vitrine para o Instagram.</h2></div><p>O visual da Home conversa com as campanhas da Febella: rosa, brilho, textura, produtos em destaque e chamadas rápidas para compartilhamento.</p></div>
+          <div className="socialRail" aria-label="Espaços para conteúdo social"><div className="socialTile">Jelly</div><div className="socialTile">Glow</div><div className="socialTile">Mel</div><div className="socialTile">3 em 1</div></div>
         </section>
 
         <section className="newsletter" id="newsletter">
-          <p className="eyebrow">ALM BEAUTY LETTER</p>
-          <h2>Novidades, lançamentos e oportunidades comerciais.</h2>
-          <p>Uma comunicação curta e útil sobre produtos, campanhas e novidades da representação.</p>
+          <p className="eyebrow">ALM BEAUTY LETTER</p><h2>Novidades, lançamentos e oportunidades comerciais.</h2><p>Uma comunicação curta e útil sobre produtos, campanhas e novidades da representação.</p>
           <form><input type="email" placeholder="seuemail@exemplo.com" aria-label="Seu e-mail"/><button type="submit">Quero receber</button></form>
         </section>
       </div>
 
       <footer className="siteFooter">
         <div className="container footerGrid">
-          <div><a className="brand footerBrand" href="#"><span className="brandMain">ALM</span><span className="brandSub">BEAUTY · MAKEUP · REPRESENTAÇÕES</span></a><p>Beleza que conecta negócios.</p></div>
+          <div><a className="brand footerBrand" href="#"><img src="/brand/alm-logo.svg" alt="ALM Representações" className="footerLogo"/></a><p>Beleza que conecta negócios.</p></div>
           <div><strong>Catálogo</strong><a href="#febella">Febella Makeup</a><a href="#catalogo">Categorias</a><a href="#destaques">Destaques</a><a href="#rotina">Escolha pelo efeito</a></div>
           <div><strong>Atendimento</strong><a href="#atacado">WhatsApp</a><a href="#">Entrega</a><a href="#">Trocas e devoluções</a><a href="#">FAQ</a></div>
           <div><strong>Institucional</strong><a href="#sobre">Sobre a ALM</a><a href="#">Privacidade</a><a href="#">Termos</a><a href="#">Contato</a></div>
