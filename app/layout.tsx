@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./product-polish.css";
 import "./home-final.css";
+import "./brand-integration.css";
 
 export const metadata: Metadata = {
   title: "ALM Representações | Febella Makeup",
