@@ -1,22 +1,22 @@
 const promos = [
   {
-    eyebrow: "WEEKLY CURATION",
-    title: "Seleção da semana",
-    copy: "Uma vitrine rotativa para campanhas, lançamentos e destaques da ALM.",
-    cta: "Ver curadoria",
+    eyebrow: "FEBELLA HIGHLIGHTS",
+    title: "Destaques da marca",
+    copy: "Uma vitrine para best sellers, lançamentos e produtos de maior apelo comercial.",
+    cta: "Ver destaques",
     className: "promoTile promoTileBlush",
   },
   {
-    eyebrow: "SKINCARE EDIT",
-    title: "Proteção + glow",
-    copy: "Descubra produtos por necessidade, textura e etapa da rotina.",
-    cta: "Explorar skincare",
+    eyebrow: "MAKEUP EDIT",
+    title: "Rosto, olhos e lábios",
+    copy: "Navegue por categorias e descubra a maquiagem certa para cada ocasião.",
+    cta: "Explorar maquiagem",
     className: "promoTile promoTileMist",
   },
   {
     eyebrow: "BEAUTY ASSISTANT",
-    title: "Sua rotina, mais simples.",
-    copy: "A Beauty AI vai usar o catálogo real para orientar sua escolha.",
+    title: "Escolher ficou mais fácil.",
+    copy: "A Beauty AI será conectada ao catálogo real para orientar sua compra.",
     cta: "Conhecer a assistente",
     className: "promoTile promoTileInk",
   },
@@ -33,7 +33,7 @@ export function PromoMosaic() {
           </div>
           <div className="promoArtwork" aria-hidden="true">
             <span className="promoOrb" />
-            <span className="promoBottle">ALM</span>
+            <span className="promoBottle">FEBELLA</span>
           </div>
           <div className="promoCopy">
             <h3>{promo.title}</h3>
