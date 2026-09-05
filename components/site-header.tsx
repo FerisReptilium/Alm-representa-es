@@ -1,11 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import type { FormEvent } from "react";
 
 const navigation = ["Febella Makeup", "Rosto", "Olhos", "Lábios", "Preparação", "Cabelo & Corpo", "Mais vendidos", "Ofertas"];
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+
+  function handleSearch(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const query = String(form.get("query") ?? "").trim();
+    window.dispatchEvent(new CustomEvent("alm:catalog-search", { detail: { query } }));
+    setOpen(false);
+    document.getElementById("destaques")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 
   return (
     <>
@@ -18,7 +28,7 @@ export function SiteHeader() {
           <a className="brand brandWithLogo" href="#" aria-label="Página inicial ALM Representações">
             <img src="/brand/alm-logo-horizontal.png" alt="ALM Representações" className="brandLogo" />
           </a>
-          <label className="searchBox"><span className="searchIcon">⌕</span><input type="search" placeholder="Buscar produtos, categorias, linhas..." aria-label="Buscar" /></label>
+          <form className="searchBox" role="search" onSubmit={handleSearch}><span className="searchIcon">⌕</span><input name="query" type="search" placeholder="Buscar produtos, categorias, linhas..." aria-label="Buscar no catálogo" /><button className="searchSubmit" type="submit">Buscar</button></form>
           <div className="headerActions"><button className="iconButton" aria-label="Favoritos">♡</button><button className="iconButton cartButton" aria-label="Carrinho">Bag<span className="cartCount">0</span></button></div>
         </div>
         <nav className="desktopNav container" aria-label="Navegação principal">{navigation.map((item) => <a key={item} href={item === "Febella Makeup" ? "#febella" : "#catalogo"}>{item}</a>)}</nav>
@@ -27,7 +37,7 @@ export function SiteHeader() {
         <button className="drawerBackdrop" aria-label="Fechar menu" onClick={() => setOpen(false)} />
         <aside className="drawerPanel">
           <div className="drawerHeader"><img src="/brand/alm-logo-oficial.png" alt="ALM Representações" className="drawerLogo"/><button className="iconButton" onClick={() => setOpen(false)} aria-label="Fechar">×</button></div>
-          <label className="searchBox mobileSearch"><span className="searchIcon">⌕</span><input type="search" placeholder="O que você procura?" aria-label="Buscar" /></label>
+          <form className="searchBox mobileSearch" role="search" onSubmit={handleSearch}><span className="searchIcon">⌕</span><input name="query" type="search" placeholder="O que você procura?" aria-label="Buscar no catálogo" /><button className="searchSubmit" type="submit">Buscar</button></form>
           <nav className="drawerNav">{navigation.map((item) => <a key={item} href={item === "Febella Makeup" ? "#febella" : "#catalogo"} onClick={() => setOpen(false)}>{item}<span>›</span></a>)}</nav>
           <div className="drawerService">Beauty, makeup e oportunidades comerciais.</div>
         </aside>
