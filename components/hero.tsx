@@ -7,9 +7,6 @@ export function Hero() {
           src="/images/alm-hero-blindagem-v2.webp"
           alt="Campanha ALM Representações com modelo da marca e Blindagem 3 em 1 da Febella Makeup"
         />
-        <a className="heroCampaignLogo" href="#sobre" aria-label="ALM Representações">
-          <img src="/brand/alm-logo-final.webp" alt="ALM Representações" />
-        </a>
       </div>
       <div className="heroCampaignBar">
         <div>
