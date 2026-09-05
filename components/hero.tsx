@@ -1,22 +1,26 @@
 export function Hero() {
   return (
-    <section className="heroShell" aria-labelledby="hero-title">
-      <div className="heroCopy">
-        <p className="eyebrow">K-BEAUTY ESSENTIALS · 2026</p>
-        <h1 id="hero-title">Sua rotina começa com o cuidado certo.</h1>
-        <p className="heroText">Curadoria de skincare com tecnologia, leveza e rituais de beleza inspirados na Coreia.</p>
-        <div className="heroActions">
-          <a className="button buttonDark" href="#catalogo">Descobrir produtos</a>
-          <a className="button buttonGhost" href="#rotina">Montar minha rotina</a>
-        </div>
-        <div className="heroTrust">
-          <span><b>100%</b> curadoria especializada</span>
-          <span><b>Beauty AI</b> para ajudar na escolha</span>
-        </div>
+    <section className="heroCampaign" aria-labelledby="hero-title">
+      <h1 id="hero-title" className="srOnly">ALM Representações — beleza que conecta negócios</h1>
+      <div className="heroCampaignMedia">
+        <img
+          src="/images/alm-hero-blindagem-v2.webp"
+          alt="Campanha ALM Representações com modelo da marca e Blindagem 3 em 1 da Febella Makeup"
+        />
+        <a className="heroCampaignLogo" href="#sobre" aria-label="ALM Representações">
+          <img src="/brand/alm-logo-final.webp" alt="ALM Representações" />
+        </a>
       </div>
-      <div className="heroVisual" aria-label="Campanha Radiant Renewal">
-        <img src="/images/radiant-renewal.webp" alt="Modelo da campanha Radiant Renewal de skincare" className="heroImage" />
-        <div className="heroVisualBadge"><span>EDITOR&apos;S PICK</span><strong>Radiant Renewal</strong></div>
+      <div className="heroCampaignBar">
+        <div>
+          <span>Campanha em destaque</span>
+          <strong>Blindagem 3 em 1 · Febella Makeup</strong>
+        </div>
+        <p>Produto real, identidade ALM e atendimento comercial em uma única experiência.</p>
+        <div className="heroCampaignActions">
+          <a className="button buttonDark" href="#destaques">Ver produto</a>
+          <a className="button buttonGhost" href="#atacado">Falar com a ALM</a>
+        </div>
       </div>
     </section>
   );

@@ -1,0 +1,120 @@
+.productCard {
+  overflow: hidden;
+  border: 1px solid rgba(40, 39, 37, .06);
+  background: #fff;
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+.productCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(185, 154, 114, .32);
+  box-shadow: 0 20px 55px rgba(39, 37, 33, .08);
+}
+.productMedia {
+  min-height: 390px;
+  isolation: isolate;
+}
+.productMedia::after {
+  content: '';
+  position: absolute;
+  inset: auto 9% 5% 9%;
+  height: 22%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(41, 38, 34, .13), rgba(41, 38, 34, 0) 68%);
+  filter: blur(12px);
+  z-index: -1;
+}
+.productMock {
+  position: relative;
+  display: grid;
+  place-items: center;
+  filter: drop-shadow(0 24px 22px rgba(55, 49, 43, .16));
+  transform: translateY(-2px);
+  transition: transform .32s ease;
+}
+.productCard:hover .productMock { transform: translateY(-10px) rotate(-1deg); }
+.productMockBody {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  overflow: hidden;
+  color: #4d4943;
+  background:
+    linear-gradient(105deg, rgba(255,255,255,.92), rgba(244,242,237,.96) 46%, rgba(255,255,255,.9)),
+    #fff;
+  border: 1px solid rgba(255,255,255,.86);
+}
+.productMockBrand {
+  max-width: 82%;
+  text-align: center;
+  font: 600 8px/1.25 Arial, sans-serif;
+  letter-spacing: .18em;
+}
+.productMockName {
+  max-width: 75%;
+  text-align: center;
+  font: 400 10px/1.22 Georgia, serif;
+  color: #716a61;
+}
+.productMockAccent {
+  width: 26px;
+  height: 2px;
+  border-radius: 99px;
+  opacity: .78;
+}
+.productMockTop, .productMockBase { position: absolute; z-index: 3; }
+.productMock--dropper { width: 136px; height: 252px; }
+.productMock--dropper .productMockBody { width: 112px; height: 168px; border-radius: 48px 48px 20px 20px; bottom: -35px; }
+.productMock--dropper .productMockTop { top: 3px; width: 54px; height: 72px; border-radius: 18px 18px 7px 7px; background: linear-gradient(90deg, #292725, #5d5851 54%, #262522); }
+.productMock--dropper .productMockTop::after { content: ''; position: absolute; left: 10px; right: 10px; bottom: -16px; height: 22px; border-radius: 7px; background: linear-gradient(90deg, #c8a46c, #efd6a9 52%, #a77b43); }
+.productMock--dropper .productMockBase { display: none; }
+.productMock--cleanser { width: 148px; height: 264px; }
+.productMock--cleanser .productMockBody { width: 122px; height: 214px; border-radius: 28px 28px 18px 18px; }
+.productMock--cleanser .productMockTop { top: 3px; width: 74px; height: 28px; border-radius: 10px 10px 4px 4px; background: #fbfbf8; border: 1px solid #ece9e2; }
+.productMock--cleanser .productMockBase { bottom: 0; width: 84px; height: 27px; border-radius: 4px 4px 11px 11px; }
+.productMock--tube { width: 150px; height: 260px; }
+.productMock--tube .productMockBody { width: 118px; height: 214px; clip-path: polygon(8% 0, 92% 0, 100% 91%, 82% 100%, 18% 100%, 0 91%); border-radius: 20px 20px 11px 11px; }
+.productMock--tube .productMockTop { display: none; }
+.productMock--tube .productMockBase { bottom: 0; width: 70px; height: 31px; border-radius: 3px 3px 12px 12px; }
+.productMock--jar { width: 176px; height: 176px; }
+.productMock--jar .productMockBody { width: 158px; height: 102px; margin-top: 38px; border-radius: 18px 18px 34px 34px; }
+.productMock--jar .productMockTop { top: 17px; width: 164px; height: 43px; border-radius: 24px 24px 10px 10px; background: linear-gradient(100deg, #fff, #ece9e3 50%, #fff); border: 1px solid rgba(209,204,195,.65); }
+.productMock--jar .productMockBase { bottom: 18px; width: 126px; height: 8px; border-radius: 99px; opacity: .58; }
+.productInfo { min-height: 174px; display: flex; flex-direction: column; padding: 20px 20px 18px; }
+.productInfo h3 { margin: 9px 0 11px; font-size: 17px; line-height: 1.28; }
+.productBrand { margin: 0; }
+.priceRow { margin-top: auto; }
+.quickBuy {
+  opacity: .82;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease, opacity .2s ease;
+}
+.productCard:hover .quickBuy { opacity: 1; background: var(--ink); color: #fff; border-color: var(--ink); }
+.wishlist { cursor: pointer; backdrop-filter: blur(8px); transition: transform .2s ease, background .2s ease; }
+.wishlist:hover { transform: scale(1.06); background: #fff; }
+@media (max-width: 900px) {
+  .productMedia { min-height: 350px; }
+}
+@media (max-width: 620px) {
+  .productMedia { min-height: 300px; }
+  .productInfo { min-height: 160px; padding: 16px; }
+  .productInfo h3 { font-size: 15px; }
+  .productMock { transform: scale(.88); }
+  .productCard:hover .productMock { transform: scale(.88) translateY(-6px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .productCard, .productMock, .quickBuy, .wishlist { transition: none !important; }
+}
+
+/* Product cards now use approved Febella campaign photography. */
+.productMediaReal{aspect-ratio:4/5;min-height:0;background:#f4e3e6}
+.productMediaReal::after{content:'';position:absolute;inset:72% 0 0;height:auto;border-radius:0;background:linear-gradient(180deg,transparent,rgba(40,22,26,.08));filter:none;z-index:1;pointer-events:none}
+.productImage{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .38s ease}
+.productCard:hover .productImage{transform:scale(1.035)}
+.productMediaReal .productBadge,.productMediaReal .wishlist{z-index:2}
+@media(max-width:900px){.productMediaReal{min-height:0}}
+@media(max-width:620px){.productMediaReal{min-height:0}.productInfo{min-height:154px}.productInfo h3{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.productImage{transition:none!important}}
