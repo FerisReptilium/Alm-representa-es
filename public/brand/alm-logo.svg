@@ -1,34 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
   <title id="title">ALM Representações</title>
-  <desc id="desc">Monograma feminino com silhueta e lótus, assinatura Beauty e Makeup.</desc>
+  <desc id="desc">Identidade ALM com figura feminina integrada a uma flor de lótus em rosé gold.</desc>
   <defs>
     <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#b46f75"/>
-      <stop offset="0.45" stop-color="#d7a29c"/>
-      <stop offset="1" stop-color="#8e545b"/>
+      <stop offset="0" stop-color="#7f493f"/>
+      <stop offset="0.25" stop-color="#b66f62"/>
+      <stop offset="0.55" stop-color="#e1b1a2"/>
+      <stop offset="0.8" stop-color="#b67366"/>
+      <stop offset="1" stop-color="#74443d"/>
+    </linearGradient>
+    <linearGradient id="roseSoft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#efc6ba"/>
+      <stop offset="0.5" stop-color="#d89a8d"/>
+      <stop offset="1" stop-color="#f3d4ca"/>
     </linearGradient>
   </defs>
-  <g fill="none" stroke="url(#rose)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M225 132c35-52 77-72 126-72 36 0 69 12 92 35"/>
-    <path d="M341 68c-14 44-5 79 24 106"/>
-    <path d="M365 174c-12 10-22 25-27 45"/>
-    <path d="M376 66c41 8 70 34 82 73-23 11-43 31-53 58"/>
-    <path d="M252 164c-34-23-70-29-106-18 18 36 43 61 76 76 16-21 27-40 30-58z"/>
-    <path d="M470 163c35-23 72-26 108-12-20 35-47 58-82 70-14-23-22-42-26-58z"/>
-    <path d="M243 167c-3 31 3 60 19 87"/>
-    <path d="M469 165c2 28-4 56-18 83"/>
-    <path d="M305 66c25-18 52-27 81-27"/>
-    <path d="M386 38c16 6 28 16 36 31"/>
+
+  <!-- lotus + feminine silhouette -->
+  <g fill="none" stroke="url(#rose)" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="6" d="M376 77c-31 11-51 36-59 73-7 32-5 68 7 108"/>
+    <path stroke-width="6" d="M377 77c38 8 69 30 87 67 17 34 18 73 4 117"/>
+    <path stroke-width="5" d="M359 93c-7 26-2 51 17 74 8 10 14 20 16 31"/>
+    <path stroke-width="5" d="M391 105c28 10 47 28 57 55-18 7-32 18-42 34-8 14-12 30-12 47"/>
+    <path stroke-width="5" d="M390 197c-13 9-24 24-31 43-8 22-9 48-4 78"/>
+    <path stroke-width="5" d="M354 318c8 15 18 29 30 42"/>
+    <path stroke-width="5" d="M384 360c12-18 20-40 24-67"/>
+    <path stroke-width="5" d="M408 293c4 35 17 61 39 79"/>
+
+    <path stroke-width="5" d="M316 167c-45-29-92-29-140 0 21 43 54 72 98 88 22-21 36-50 42-88z"/>
+    <path stroke-width="5" d="M299 181c-34-8-69 0-105 24"/>
+    <path stroke-width="5" d="M302 196c-23 18-41 39-53 63"/>
+
+    <path stroke-width="5" d="M464 168c45-28 93-27 143 3-23 42-57 71-102 86-21-21-35-51-41-89z"/>
+    <path stroke-width="5" d="M480 182c36-7 71 2 106 26"/>
+    <path stroke-width="5" d="M478 198c24 18 43 39 56 63"/>
   </g>
-  <g fill="url(#rose)">
-    <path d="M360 36c15-34 32-34 47 0-14 22-30 31-47 0z"/>
-    <path d="M328 59c-28-23-48-14-61 17 27 5 47 0 61-17z"/>
-    <path d="M420 59c28-23 49-14 62 17-28 5-48 0-62-17z"/>
+
+  <g fill="url(#roseSoft)" opacity="0.95">
+    <path d="M319 169c-44-24-83-22-119 4 20 34 46 57 79 70 22-19 35-44 40-74z"/>
+    <path d="M462 170c44-23 84-20 121 7-21 33-48 56-82 68-21-20-34-45-39-75z"/>
   </g>
-  <text x="380" y="300" text-anchor="middle" fill="#2f2927" font-family="Georgia, 'Times New Roman', serif" font-size="126" letter-spacing="8">ALM</text>
-  <text x="380" y="345" text-anchor="middle" fill="#403735" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="11">REPRESENTAÇÕES</text>
-  <line x1="215" y1="374" x2="300" y2="374" stroke="#b46f75" stroke-width="2"/>
-  <line x1="460" y1="374" x2="545" y2="374" stroke="#b46f75" stroke-width="2"/>
-  <text x="380" y="382" text-anchor="middle" fill="#a56a70" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="7">BEAUTY • MAKEUP</text>
-  <text x="380" y="412" text-anchor="middle" fill="#8f6464" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-style="italic" letter-spacing="1">Beleza que conecta negócios</text>
+
+  <!-- wordmark -->
+  <text x="380" y="405" text-anchor="middle" fill="url(#rose)" font-family="Georgia, 'Times New Roman', serif" font-size="132" letter-spacing="4">ALM</text>
+  <text x="380" y="454" text-anchor="middle" fill="#5c4742" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="12">REPRESENTAÇÕES</text>
+  <line x1="205" y1="483" x2="298" y2="483" stroke="#b66f62" stroke-width="2"/>
+  <line x1="462" y1="483" x2="555" y2="483" stroke="#b66f62" stroke-width="2"/>
+  <text x="380" y="490" text-anchor="middle" fill="#a86d63" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="7">BEAUTY • MAKEUP</text>
+  <text x="380" y="516" text-anchor="middle" fill="#8b625b" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic">Beleza que conecta negócios</text>
 </svg>
