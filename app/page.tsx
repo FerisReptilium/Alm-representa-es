@@ -27,12 +27,12 @@ export default function Home() {
             <a className="button buttonDark" href="#febella">Conhecer a marca representada</a>
           </div>
           <div className="finalStatementMark" aria-label="Assinatura visual ALM">
-            <img src="/brand/alm-logo.svg" alt="ALM Representações — Beleza que conecta negócios" className="finalStatementLogo" />
+            <img src="/brand/alm-logo-final.webp" alt="ALM Representações — Beleza que conecta negócios" className="finalStatementLogo" />
           </div>
         </section>
 
         <section className="brandPartnerLockup" aria-label="Parceria ALM e Febella Makeup">
-          <img src="/brand/alm-logo.svg" alt="ALM Representações" />
+          <img src="/brand/alm-logo-final.webp" alt="ALM Representações" />
           <span className="brandPartnerDivider" aria-hidden="true" />
           <div className="febellaWordmarkCard"><img src="/brand/febella-wordmark.svg" alt="Febella Makeup"/><small>Marca representada pela ALM</small></div>
         </section>
@@ -147,7 +147,7 @@ export default function Home() {
 
       <footer className="siteFooter">
         <div className="container footerGrid">
-          <div><a className="brand footerBrand" href="#"><img src="/brand/alm-logo.svg" alt="ALM Representações" className="footerLogo"/></a><p>Beleza que conecta negócios.</p></div>
+          <div><a className="brand footerBrand" href="#"><img src="/brand/alm-logo-final.webp" alt="ALM Representações" className="footerLogo"/></a><p>Beleza que conecta negócios.</p></div>
           <div><strong>Catálogo</strong><a href="#febella">Febella Makeup</a><a href="#catalogo">Categorias</a><a href="#destaques">Destaques</a><a href="#rotina">Escolha pelo efeito</a></div>
           <div><strong>Atendimento</strong><a href="#atacado">WhatsApp</a><a href="#">Entrega</a><a href="#">Trocas e devoluções</a><a href="#">FAQ</a></div>
           <div><strong>Institucional</strong><a href="#sobre">Sobre a ALM</a><a href="#">Privacidade</a><a href="#">Termos</a><a href="#">Contato</a></div>
