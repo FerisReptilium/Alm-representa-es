@@ -2,6 +2,7 @@ import { SiteHeader } from "@/components/site-header";
 import { Hero } from "@/components/hero";
 import { ProductCatalog } from "@/components/product-catalog";
 import { AiAssistant } from "@/components/ai-assistant";
+import { ShippingCalculator } from "@/components/shipping-calculator";
 import { categories, needs, products } from "@/data/home";
 
 export default function Home() {
@@ -123,7 +124,7 @@ export default function Home() {
         </section>
 
         <section className="serviceGrid" aria-label="Serviços digitais">
-          <article className="servicePanel"><span className="serviceNo">01</span><strong>Frete por CEP</strong><p>Entrega local estimada para parceiros próximos e estrutura preparada para Correios, FedEx e futuros conectores de entrega.</p><a href="#">Calcular entrega →</a></article>
+          <ShippingCalculator />
           <article className="servicePanel"><span className="serviceNo">02</span><strong>Beauty AI</strong><p>A assistente vai consultar catálogo, benefícios, preços oficiais e campanhas sem expor nenhuma chave privada no navegador.</p><a href="#rotina">Perguntar à assistente →</a></article>
           <article className="servicePanel"><span className="serviceNo">03</span><strong>WhatsApp inteligente</strong><p>Cada produto poderá abrir uma mensagem pronta com nome, quantidade, campanha e origem do clique.</p><a href="#destaques">Escolher produto →</a></article>
           <article className="servicePanel"><span className="serviceNo">04</span><strong>Painel ALM</strong><p>Produtos, preços, banners, campanhas e contatos serão administráveis sem precisar editar o código.</p><a href="#">Conhecer estrutura →</a></article>
@@ -149,7 +150,7 @@ export default function Home() {
         <div className="container footerGrid">
           <div><a className="brand footerBrand" href="#"><img src="/brand/alm-logo-oficial.png" alt="ALM Representações" className="footerLogo"/></a><p>Beleza que conecta negócios.</p></div>
           <div><strong>Catálogo</strong><a href="#febella">Febella Makeup</a><a href="#catalogo">Categorias</a><a href="#destaques">Destaques</a><a href="#rotina">Escolha pelo efeito</a></div>
-          <div><strong>Atendimento</strong><a href="#atacado">WhatsApp</a><a href="#">Entrega</a><a href="#">Trocas e devoluções</a><a href="#">FAQ</a></div>
+          <div><strong>Atendimento</strong><a href="#atacado">WhatsApp</a><a href="#entrega">Entrega</a><a href="#">Trocas e devoluções</a><a href="#">FAQ</a></div>
           <div><strong>Institucional</strong><a href="#sobre">Sobre a ALM</a><a href="#">Privacidade</a><a href="#">Termos</a><a href="#">Contato</a></div>
         </div>
         <div className="container footerBottom"><span>© 2026 ALM Representações. Conteúdo comercial em validação.</span><span>Brasil · PT-BR</span></div>
