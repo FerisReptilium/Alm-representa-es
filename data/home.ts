@@ -9,7 +9,21 @@ export const categories = [
 
 export const needs = ["Pele preparada", "Efeito glow", "Longa duração", "Olhar marcado", "Lábios em destaque", "Praticidade"];
 
-export const products = [
+export type Product = {
+  name: string;
+  brand: string;
+  category: string;
+  price: string;
+  badge: string;
+  image: string;
+  alt: string;
+  imagePosition: string;
+  description: string;
+  features: string[];
+  whatsappMessage: string;
+};
+
+export const products: Product[] = [
   {
     name: "Jelly Tint Multifuncional",
     brand: "FEBELLA MAKEUP",

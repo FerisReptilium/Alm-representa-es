@@ -1,6 +1,6 @@
 import { SiteHeader } from "@/components/site-header";
 import { Hero } from "@/components/hero";
-import { ProductCard } from "@/components/product-card";
+import { ProductCatalog } from "@/components/product-catalog";
 import { AiAssistant } from "@/components/ai-assistant";
 import { categories, needs, products } from "@/data/home";
 
@@ -90,7 +90,7 @@ export default function Home() {
             <div><p className="eyebrow">FEBELLA EM DESTAQUE</p><h2>Produtos reais, prontos para consultar.</h2></div>
             <a href="#atacado">Falar com atendimento <span>→</span></a>
           </div>
-          <div className="productGrid">{products.map((product) => <ProductCard key={product.name} product={product} />)}</div>
+          <ProductCatalog products={products} />
         </section>
 
         <section className="editorialSection" aria-label="Campanhas editoriais">

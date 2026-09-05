@@ -1,16 +1,4 @@
-type Product = {
-  name: string;
-  brand: string;
-  category: string;
-  price: string;
-  badge: string;
-  image: string;
-  alt: string;
-  imagePosition: string;
-  description: string;
-  features: string[];
-  whatsappMessage: string;
-};
+import type { Product } from "@/data/home";
 
 export function ProductCard({ product }: { product: Product }) {
   const whatsappHref = `https://wa.me/?text=${encodeURIComponent(product.whatsappMessage)}`;
