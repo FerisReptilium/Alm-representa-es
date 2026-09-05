@@ -87,7 +87,7 @@ export default function Home() {
 
         <section className="sectionBlock" id="destaques">
           <div className="sectionHeading splitHeading">
-            <div><p className="eyebrow">FEBELLA EM DESTAQUE</p><h2>Produtos que puxam a venda.</h2></div>
+            <div><p className="eyebrow">FEBELLA EM DESTAQUE</p><h2>Produtos reais, prontos para consultar.</h2></div>
             <a href="#atacado">Falar com atendimento <span>→</span></a>
           </div>
           <div className="productGrid">{products.map((product) => <ProductCard key={product.name} product={product} />)}</div>
