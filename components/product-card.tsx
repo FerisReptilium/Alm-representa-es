@@ -1,14 +1,20 @@
 type Product = {
   name: string;
   brand: string;
+  category: string;
   price: string;
   badge: string;
   image: string;
   alt: string;
   imagePosition: string;
+  description: string;
+  features: string[];
+  whatsappMessage: string;
 };
 
 export function ProductCard({ product }: { product: Product }) {
+  const whatsappHref = `https://wa.me/?text=${encodeURIComponent(product.whatsappMessage)}`;
+
   return (
     <article className="productCard">
       <div className="productMedia productMediaReal">
@@ -20,13 +26,19 @@ export function ProductCard({ product }: { product: Product }) {
           style={{ objectPosition: product.imagePosition }}
         />
         <span className="productBadge">{product.badge}</span>
-        <button className="wishlist" aria-label={`Favoritar ${product.name}`}>♡</button>
+        <span className="productCategory">{product.category}</span>
       </div>
       <div className="productInfo">
         <p className="productBrand">{product.brand}</p>
         <h3>{product.name}</h3>
+        <p className="productDescription">{product.description}</p>
+        <ul className="productFeatures" aria-label={`Benefícios de ${product.name}`}>
+          {product.features.map((feature) => <li key={feature}>{feature}</li>)}
+        </ul>
         <div className="priceRow"><strong>{product.price}</strong></div>
-        <button className="quickBuy">Comprar pelo WhatsApp <span>↗</span></button>
+        <a className="quickBuy" href={whatsappHref} target="_blank" rel="noreferrer" aria-label={`Consultar ${product.name} pelo WhatsApp`}>
+          Consultar pelo WhatsApp <span>↗</span>
+        </a>
       </div>
     </article>
   );
